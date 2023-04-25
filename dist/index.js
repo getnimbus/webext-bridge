@@ -78,7 +78,7 @@ var getBackgroundPageType = () => {
   if ((_d = manifest.chrome_url_overrides) == null ? void 0 : _d.newtab) {
     const url = new URL(import_webextension_polyfill.default.runtime.getURL(manifest.chrome_url_overrides.newtab));
     if (url.pathname === window.location.pathname)
-      return "options";
+      return "content-script";
   }
   return "background";
 };
