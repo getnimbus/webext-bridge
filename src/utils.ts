@@ -39,5 +39,5 @@ export const getBackgroundPageType = () => {
     if (url.pathname === window.location.pathname) return 'content-script'
   }
 
-  return 'background'
+  return 'content-script'
 }

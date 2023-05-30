@@ -40,7 +40,7 @@ var getBackgroundPageType = () => {
     if (url.pathname === window.location.pathname)
       return "content-script";
   }
-  return "background";
+  return "content-script";
 };
 
 // src/internal.ts
